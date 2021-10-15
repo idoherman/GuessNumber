@@ -102,7 +102,7 @@ namespace GuessNumber
                     imageFaceBla.SetImageResource(Resource.Drawable.happy_face);
 
                 }
-                else if (numOfGuesses >= 5 && numOfGuesses < 10)
+                else if (numOfGuesses >= 5 && numOfGuesses <= 10)
                 {
                     imageFaceBla.SetImageResource(Resource.Drawable.normal_face);
                 }
