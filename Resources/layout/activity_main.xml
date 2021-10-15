@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/txtTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guess The Number"
+        android:textSize="40sp"
+        android:background="@android:color/black"
+        android:textColor="@android:color/holo_green_dark"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/txtRange"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="Range:"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            />
+
+        <EditText
+            android:id="@+id/txtLowGuess"
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"
+            android:hint="Low Guess"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:inputType="number"
+
+            />
+
+         <EditText
+            android:id="@+id/txtHighGuess"
+            android:layout_width="140sp"
+            android:layout_height="wrap_content"
+            android:hint="High Guess"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:inputType="number"
+
+            />
+
+     
+
+    </LinearLayout>
+            <Button
+            android:id="@+id/btnStart"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+        >
+         <EditText
+            android:id="@+id/txtGuess"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="Your Guess"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:inputType="number"
+
+            />
+      <Button
+            android:id="@+id/btnGuess"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Check"
+            android:layout_gravity="center"
+            android:textSize="40sp"
+            />
+         </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Answer"
+        android:textSize="35sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/txtNumOfGuesses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 Guesses"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
+
+        <ImageView
+             android:id="@+id/imageFace"
+             android:layout_width="200dp"
+             android:layout_height="200dp"
+             android:layout_gravity="center"
+             android:src="@drawable/thinking_face"
+        />
+
+
+    </LinearLayout>
+
+
+
+
+
+
