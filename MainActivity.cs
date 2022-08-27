@@ -49,7 +49,7 @@ namespace GuessNumber
             }
             if (low >= high)
             {
-                Toast.MakeText(this, "low cant be bigger then high", ToastLength.Long).Show();
+                Toast.MakeText(this, "low cant be bigger/equal high", ToastLength.Long).Show();
             }
             answer = r.Next(low, high + 1);
         }
@@ -65,6 +65,7 @@ namespace GuessNumber
             txtAnswer =       FindViewById<TextView>(Resource.Id.txtAnswer);
             txtNumOfGuesses = FindViewById<TextView>(Resource.Id.txtNumOfGuesses);
             imageFaceBla =    FindViewById<ImageView>(Resource.Id.imageFace);
+
             btnGuess.Click += CheckButton_Click;
             btnStart.Click += NewButton_Click;
 
@@ -116,6 +117,11 @@ namespace GuessNumber
         private void NewButton_Click(object sender, EventArgs e)
         {
             setRandom();
+            numOfGuesses = 0;
+            txtNumOfGuesses.Text = (numOfGuesses + " guesses");
+            imageFaceBla.SetImageResource(Resource.Drawable.thinking_face);
+            txtGuess.Text = "";
+            txtAnswer.Text = "Answer";
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
